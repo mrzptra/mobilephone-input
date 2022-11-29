@@ -1,0 +1,49 @@
+<!--
+    NIM :A11.2022.14741
+    don't feel "bad" about your code!
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graciass dek!!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-sm col-md-6 card mt-4">
+        <div class="card-header">
+            Telphone | A11.2022.14741  </div>
+          <div class="card-body">
+    <textarea placeholder="Output akan muncul disini" class="form-control"></textarea>
+ </div>
+ <div class="mb-3">
+    <center>
+    <button class="btn btn-primary">1</button>
+    <button class="btn btn-primary">2</button>
+    <button class="btn btn-primary">3</button>
+    <button class="btn btn-primary">4</button>
+    <button class="btn btn-primary">5</button>
+    <button class="btn btn-primary">6</button>
+    <button class="btn btn-primary">7</button>
+    <button class="btn btn-primary">8</button>
+    <button class="btn btn-primary">9</button>
+    <button class="btn btn-primary">0</button>
+    </center>
+  </div>
+ </div>
+ </div>
+    <script defer>
+        var ngambiljikadipencetButton = document.querySelectorAll('.btn')
+        var ngambiltextarea = document.querySelector('textarea')
+
+            ngambiljikadipencetButton.forEach(btn => {
+                btn.addEventListener('click', () => {
+             ngambiltextarea.value += btn.innerText
+    })
+})
+
+</script>
+</body>
+</html>
